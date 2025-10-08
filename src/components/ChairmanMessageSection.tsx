@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { FaFacebook, FaLinkedin, FaSkype, FaQuoteLeft } from 'react-icons/fa'
+import Image from 'next/image';
 
 export default function ChairmanMessageSection() {
   return (
@@ -65,11 +66,12 @@ export default function ChairmanMessageSection() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="relative">
-                  <img
+                  <Image
                     src="/images/team/ashraf.jpeg"
                     alt="Engr. Md.Asraful Islam"
                     className="w-32 h-32 rounded-full object-cover border-4 border-[#48C7EC] shadow-lg"
-                    style={{ height: '128px', width: '128px' }}
+                    width={128}
+                    height={128}
                   />
                   
                   {/* Animated Border */}

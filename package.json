@@ -5,14 +5,26 @@
   "keywords": ["nextjs", "react", "typescript", "tailwindcss", "software-development", "mihisoft"],
   "author": "Mihisoft Technologies",
   "private": true,
+  "homepage": "https://mihisoft.com",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
+    "postbuild": "npm run export",
     "deploy": "./deploy.sh",
-    "build:static": "next build"
+    "build:static": "next build",
+    "preinstall": "npx npm-force-resolutions",
+    "postinstall": "npm run lint",
+    "prepare": "npm run lint",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix",
+    "start:prod": "cross-env NODE_ENV=production next start"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -21,7 +33,9 @@
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "helmet": "^7.0.0",
+    "cross-env": "^7.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
