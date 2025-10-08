@@ -5,10 +5,21 @@
 
 set -e  # Exit on any error
 
-# Configuration
-BUCKET_NAME="mihisoft-website"
-REGION="us-east-1"
-PROFILE="default"  # Change if using different AWS profile
+# Load environment variables from .env file
+if [ -f .env ]; then
+    export $(grep -v '^#' .env | xargs)
+fi
+
+# Configuration from environment variables
+BUCKET_NAME="${AWS_BUCKET_NAME}"
+REGION="${AWS_REGION}"
+PROFILE="${AWS_PROFILE:-default}"
+
+# Check required environment variables
+if [ -z "$BUCKET_NAME" ] || [ -z "$REGION" ]; then
+    echo "❌ AWS_BUCKET_NAME and AWS_REGION must be set in your .env file."
+    exit 1
+fi
 
 # Colors for output
 RED='\033[0;31m'
@@ -62,6 +73,10 @@ rm -rf .next/
 # Install dependencies
 log_info "Installing dependencies..."
 npm ci
+
+# Run security audit
+log_info "Running security audit..."
+npm run audit
 
 # Run linting (optional, comment out if not needed)
 log_info "Running linter..."

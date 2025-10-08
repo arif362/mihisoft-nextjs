@@ -24,7 +24,7 @@ export default function TeamSection() {
       position: 'Chief Operating Officer',
       image: '/images/team/coo_sakhwat.jpeg',
       description: 'Operations excellence leader ensuring seamless project delivery and organizational efficiency across all departments and teams.',
-      experience: '12+ Years',
+      experience: '27+ Years',
       achievements: ['Operations Expert', 'Team Builder', 'Process Optimizer'],
       social: {
         facebook: 'https://www.facebook.com/profile.php?id=100007704107082&mibextid=ZbWKwL',

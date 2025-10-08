@@ -35,6 +35,20 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# AWS deployment files (sensitive)
-aws-config.json
+# Environment variables
+.env
+.env.*
+.envrc
+
+# AWS credentials and config
 .aws/
+aws-config.json
+
+# Sensitive logs
+*.log
+*.log.*
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
