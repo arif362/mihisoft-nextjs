@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaFacebook, FaLinkedin, FaSkype, FaMapMarkerAlt, FaAward, FaUsers } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaSkype, FaMapMarkerAlt, FaStar, FaUsers } from 'react-icons/fa'
 import { HiSparkles } from 'react-icons/hi'
 import Image from 'next/image'
 
@@ -12,7 +12,7 @@ export default function TeamSection() {
       position: 'Chairman',
       image: '/images/team/ashraf.jpeg',
       description: 'Visionary leader driving strategic growth and innovation with extensive experience in technology leadership and business development.',
-      experience: '17+ Years',
+      specialty: 'Strategic Vision',
       achievements: ['Strategic Leader', 'Tech Innovator', 'Business Expert'],
       social: {
         facebook: 'https://www.facebook.com/profile.php?id=100009816738088',
@@ -25,10 +25,23 @@ export default function TeamSection() {
       position: 'Chief Operating Officer',
       image: '/images/team/coo_sakhwat.jpeg',
       description: 'Operations excellence leader ensuring seamless project delivery and organizational efficiency across all departments and teams.',
-      experience: '27+ Years',
+      specialty: 'Operations Excellence',
       achievements: ['Operations Expert', 'Team Builder', 'Process Optimizer'],
       social: {
         facebook: 'https://www.facebook.com/profile.php?id=100007704107082&mibextid=ZbWKwL',
+        linkedin: '#',
+        skype: '#'
+      }
+    },
+    {
+      name: 'Md. Nuruzzaman Nur (Nahid)',
+      position: 'Director',
+      image: '/images/team/nahid.png',
+      description: 'Strategic director with strong expertise in business development and technology solutions, driving company growth and innovation.',
+      specialty: 'Business Growth',
+      achievements: ['Business Development', 'Strategic Planning', 'Tech Solutions'],
+      social: {
+        facebook: '#',
         linkedin: '#',
         skype: '#'
       }
@@ -85,7 +98,7 @@ export default function TeamSection() {
         </motion.div>
         
         {/* Enhanced Team Cards */}
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
@@ -98,7 +111,7 @@ export default function TeamSection() {
               <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-[#48C7EC] h-full flex flex-col">
                 {/* Card Header with Image */}
                 <div className="relative flex-shrink-0">
-                  <div className="h-80 overflow-hidden relative">
+                  <div className="h-72 overflow-hidden relative">
                     <Image 
                       src={member.image}
                       alt={member.name}
@@ -108,11 +121,11 @@ export default function TeamSection() {
                     {/* Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     
-                    {/* Experience Badge */}
+                    {/* Specialty Badge */}
                     <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
                       <div className="flex items-center gap-2">
-                        <FaAward className="text-yellow-500 w-4 h-4" />
-                        <span className="text-sm font-semibold text-gray-800">{member.experience}</span>
+                        <FaStar className="text-yellow-500 w-4 h-4" />
+                        <span className="text-sm font-semibold text-gray-800">{member.specialty}</span>
                       </div>
                     </div>
 
