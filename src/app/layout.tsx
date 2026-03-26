@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mihisoft Technologies Ltd. | Software Company, Ruby on Rails, Mobile And Web Applications Outsourcing Company",
-  description: "Mihisoft Technologies - Expert in Ruby on Rails, Web, and Mobile. Completed more then 20 projects in 9 countries. Outsource your RoR, PHP, .NET, iOS or Android project to get quick response from our team. To build innovative products by the implementation of new & innovative technologies at par with",
+  title: "Mihisoft Technologies Ltd. | Leading Software Development Company in Bangladesh",
+  description: "Mihisoft Technologies - Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. Successfully delivered 20+ projects across 9 countries. Outsource your RoR, PHP, .NET, iOS or Android project for innovative digital solutions.",
   keywords: [
     "Software Company",
     "mihisoft", 
@@ -58,23 +58,23 @@ export const metadata: Metadata = {
     "bingbot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   },
   openGraph: {
-    title: "Mihisoft Technologies Ltd. | Software Company, Ruby on Rails, Mobile And Web Applications Outsourcing Company",
-    description: "Mihisoft Technologies - Expert in Ruby on Rails, Web, and Mobile. Completed more then 20 projects in 9 countries. Outsource your RoR, PHP, .NET, iOS or Android project to get quick response from our team. To build innovative products by the implementation of new & innovative technologies at par with",
-    url: "https://www.mihisoft.com/",
+    title: "Mihisoft Technologies Ltd. | Leading Software Development Company",
+    description: "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. Successfully delivered 20+ projects across 9 countries. Transform your business with innovative digital solutions.",
+    url: "https://mihisoft.com/",
     siteName: "Mihisoft Technologies Ltd.",
     images: [
       {
-        url: "https://www.mihisoft.com/logo/logo.png",
+        url: "https://mihisoft.com/images/logo/logo.png",
         width: 1200,
         height: 630,
-        alt: "Mihisoft Technologies Ltd.",
+        alt: "Mihisoft Technologies Ltd. - Software Development Company",
       },
     ],
     locale: "en_US",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.mihisoft.com/"
+    canonical: "https://mihisoft.com/"
   },
   icons: {
     icon: [
@@ -84,12 +84,14 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
     apple: "/images/logo/icon.png",
   },
-  metadataBase: new URL("https://www.mihisoft.com"),
+  metadataBase: new URL("https://mihisoft.com"),
   twitter: {
     card: "summary_large_image",
-    title: "Mihisoft Technologies Ltd. | Software Company, Ruby on Rails, Mobile And Web Applications Outsourcing Company",
-    description: "Mihisoft Technologies - Expert in Ruby on Rails, Web, and Mobile. Completed more then 20 projects in 9 countries.",
-    images: ["https://www.mihisoft.com/logo/logo.png"],
+    title: "Mihisoft Technologies Ltd. | Leading Software Development Company",
+    description: "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. 20+ projects delivered across 9 countries.",
+    site: "@mihisoft",
+    creator: "@mihisoft",
+    images: ["https://mihisoft.com/images/logo/logo.png"],
   },
   verification: {
     google: undefined,
@@ -133,9 +135,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Mihisoft Technologies Ltd.",
-              "url": "https://www.mihisoft.com",
-              "logo": "https://www.mihisoft.com/logo/logo.png",
-              "description": "Mihisoft Technologies - Expert in Ruby on Rails, Web, and Mobile. Completed more then 20 projects in 9 countries.",
+              "url": "https://mihisoft.com",
+              "logo": "https://mihisoft.com/images/logo/logo.png",
+              "description": "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. Successfully delivered 20+ projects across 9 countries.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "6/7, Block B, Mirpur 12, Pallabi",
@@ -154,7 +156,7 @@ export default function RootLayout({
                 "https://www.linkedin.com/company/mihisoft",
                 "https://www.youtube.com/@mihisofttechnologies3793"
               ],
-              "foundingDate": "2020",
+              "foundingDate": "2024",
               "employee": [
                 {
                   "@type": "Person",
