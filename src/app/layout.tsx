@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Mihisoft Technologies Ltd.",
     images: [
       {
-        url: "https://mihisoft.com/images/og-image.png",
+        url: "https://mihisoft.com/images/logo/logo.png",
         width: 1200,
         height: 630,
         alt: "Mihisoft Technologies Ltd. - Software Development Company",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     description: "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. 20+ projects delivered across 9 countries.",
     site: "@mihisoft",
     creator: "@mihisoft",
-    images: ["https://mihisoft.com/images/og-image.png"],
+    images: ["https://mihisoft.com/images/logo/logo.png"],
   },
   verification: {},
 };
