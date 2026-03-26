@@ -38,3 +38,5 @@ next-env.d.ts
 # AWS deployment files (sensitive)
 aws-config.json
 .aws/
+# VS Code local history
+.history/
