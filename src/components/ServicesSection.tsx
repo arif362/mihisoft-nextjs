@@ -76,7 +76,7 @@ export default function ServicesSection() {
             Our <span className="text-[#48C7EC]">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We are experts in this industry with more than 5 years experience. What that means is you are going to get right solution. Please find our services.
+            We are experts in this industry with passionate and experienced team. What that means is you are going to get the right solution. Please find our services.
           </p>
         </motion.div>
 

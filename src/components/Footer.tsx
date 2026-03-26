@@ -94,7 +94,7 @@ export default function Footer() {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('portfolios')}
+                  onClick={() => scrollToSection('our_projects')}
                   className="text-gray-300 hover:text-white transition-colors text-left"
                 >
                   Portfolio

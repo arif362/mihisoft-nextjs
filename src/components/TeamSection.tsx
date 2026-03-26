@@ -228,7 +228,7 @@ export default function TeamSection() {
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-white/50 shadow-xl max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#48C7EC] mb-2">2020</div>
+                <div className="text-3xl font-bold text-[#48C7EC] mb-2">2024</div>
                 <div className="text-gray-600">Founded Year</div>
               </div>
               <div className="text-center">

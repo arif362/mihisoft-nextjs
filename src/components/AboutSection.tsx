@@ -11,7 +11,7 @@ export default function AboutSection() {
 
   const stats = [
     { icon: Users, number: '10+', label: 'Happy Clients' },
-    { icon: Award, number: '5+', label: 'Years Growing' },
+    { icon: Award, number: '2+', label: 'Years Growing' },
     { icon: CheckCircle, number: '15+', label: 'Projects Delivered' },
     { icon: Clock, number: '48hrs', label: 'Quick Turnaround' },
   ]
@@ -32,7 +32,7 @@ export default function AboutSection() {
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Mihisoft Technologies is an agile startup revolutionizing software development in Bangladesh. 
-              Founded in 2020, we combine startup speed with enterprise-grade quality to deliver 
+              Founded in 2024, we combine startup speed with enterprise-grade quality to deliver 
               innovative solutions that transform businesses rapidly.
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">

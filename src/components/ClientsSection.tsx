@@ -79,7 +79,7 @@ export default function ClientsSection() {
             <p className="text-gray-600">Projects Delivered</p>
           </div>
           <div>
-            <h3 className="text-4xl font-bold text-[#48C7EC] mb-2">5+</h3>
+            <h3 className="text-4xl font-bold text-[#48C7EC] mb-2">2+</h3>
             <p className="text-gray-600">Years Growing</p>
           </div>
           <div>
