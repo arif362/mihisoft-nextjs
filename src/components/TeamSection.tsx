@@ -11,7 +11,7 @@ export default function TeamSection() {
       position: 'Chairman',
       image: '/images/team/ashraf.jpeg',
       description: 'Visionary leader driving strategic growth and innovation with extensive experience in technology leadership and business development.',
-      experience: '15+ Years',
+      experience: '17+ Years',
       achievements: ['Strategic Leader', 'Tech Innovator', 'Business Expert'],
       social: {
         facebook: 'https://www.facebook.com/profile.php?id=100009816738088',
@@ -24,7 +24,7 @@ export default function TeamSection() {
       position: 'Chief Operating Officer',
       image: '/images/team/coo_sakhwat.jpeg',
       description: 'Operations excellence leader ensuring seamless project delivery and organizational efficiency across all departments and teams.',
-      experience: '12+ Years',
+      experience: '27+ Years',
       achievements: ['Operations Expert', 'Team Builder', 'Process Optimizer'],
       social: {
         facebook: 'https://www.facebook.com/profile.php?id=100007704107082&mibextid=ZbWKwL',
