@@ -16,42 +16,28 @@ export const metadata: Metadata = {
   title: "Mihisoft Technologies Ltd. | Leading Software Development Company in Bangladesh",
   description: "Mihisoft Technologies - Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. Successfully delivered 20+ projects across 9 countries. Outsource your RoR, PHP, .NET, iOS or Android project for innovative digital solutions.",
   keywords: [
-    "Software Company",
-    "mihisoft", 
-    "Mihisoft Technology",
-    "Mihisoft",
     "Mihisoft Technologies",
+    "software development company bangladesh",
     "ruby on rails company",
     "ruby rails development", 
     "php development",
+    "laravel development",
     "wordpress developer",
     "web and mobile development",
-    "node js",
+    "node js development",
+    "react development",
+    "next js development",
     "ux ui design",
-    "software development company in bangladesh",
-    "test application",
-    "maintenance application",
-    "bequent",
-    "team ruby",
-    "rail team", 
-    "software farm",
-    "software company",
-    "developing mobile web applications",
-    "dot net framework",
-    "ruby rails blog",
-    "outsourcing",
-    "ruby on rails",
-    "ruby",
-    "Ruby on Rails",
-    "Laravel",
-    "PHP",
-    "software company in bangladesh",
-    "Php",
-    ".Net",
-    "Laravel",
-    "Ruby based software company in bangladesh"
+    "mobile app development",
+    "ios android development",
+    "custom software solutions",
+    "IT outsourcing bangladesh",
+    "software outsourcing",
+    "e-commerce development",
+    "web application development",
+    "dot net development"
   ],
-  authors: [{ name: "Web Developer | Software Engineer" }],
+  authors: [{ name: "Mihisoft Technologies Ltd." }],
   robots: "index, follow",
   other: {
     "googlebot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
@@ -64,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Mihisoft Technologies Ltd.",
     images: [
       {
-        url: "https://mihisoft.com/images/logo/logo.png",
+        url: "https://mihisoft.com/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mihisoft Technologies Ltd. - Software Development Company",
@@ -91,13 +77,9 @@ export const metadata: Metadata = {
     description: "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. 20+ projects delivered across 9 countries.",
     site: "@mihisoft",
     creator: "@mihisoft",
-    images: ["https://mihisoft.com/images/logo/logo.png"],
+    images: ["https://mihisoft.com/images/og-image.png"],
   },
-  verification: {
-    google: undefined,
-    yandex: undefined,
-    yahoo: undefined,
-  },
+  verification: {},
 };
 
 export default function RootLayout({
@@ -114,12 +96,12 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#2563eb" />
-        <meta name="msapplication-TileColor" content="#2563eb" />
-        <meta name="msapplication-navbutton-color" content="#2563eb" />
+        <meta name="theme-color" content="#48C7EC" />
+        <meta name="msapplication-TileColor" content="#48C7EC" />
+        <meta name="msapplication-navbutton-color" content="#48C7EC" />
         
         {/* Facebook Meta Tags */}
-        <meta property="article:publisher" content="http://www.facebook.com/mihisoft" />
+        <meta property="article:publisher" content="https://www.facebook.com/mihisoft" />
         
         {/* Business Information */}
         <meta name="geo.region" content="BD-13" />

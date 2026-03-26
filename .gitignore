@@ -1,42 +1,143 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# ===================
+# Dependencies
+# ===================
+node_modules/
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
-# testing
-/coverage
-
-# next.js
+# ===================
+# Build outputs
+# ===================
 /.next/
 /out/
+/build/
+/dist/
+*.tsbuildinfo
 
-# production
-/build
+# ===================
+# Environment files (CRITICAL - Never commit!)
+# ===================
+.env
+.env.*
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+!.env.example
 
-# misc
-.DS_Store
+# ===================
+# AWS & Cloud (CRITICAL - Never commit!)
+# ===================
+.aws/
+aws-config.json
 *.pem
+*.key
+*.crt
+credentials
+.credentials
+config.local.json
 
-# debug
+# ===================
+# IDE & Editor
+# ===================
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ===================
+# OS generated files
+# ===================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===================
+# Logs & Debug
+# ===================
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# local env files
-.env*.local
+# ===================
+# Testing
+# ===================
+/coverage/
+.nyc_output/
+*.lcov
+.jest/
 
-# vercel
-.vercel
-
-# typescript
+# ===================
+# TypeScript
+# ===================
 *.tsbuildinfo
 next-env.d.ts
 
-# AWS deployment files (sensitive)
-aws-config.json
-.aws/
-# VS Code local history
+# ===================
+# Vercel
+# ===================
+.vercel/
+
+# ===================
+# Local History & Cache
+# ===================
 .history/
+.cache/
+*.cache
+.turbo/
+.eslintcache
+.stylelintcache
+
+# ===================
+# Misc
+# ===================
+*.bak
+*.tmp
+*.temp
+.temp/
+tmp/
+temp/
+
+# ===================
+# Security sensitive (never commit)
+# ===================
+*.p12
+*.pfx
+*.jks
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+*.secret
+secrets.json
+private/
