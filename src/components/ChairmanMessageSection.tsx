@@ -2,10 +2,11 @@
 
 import { motion } from 'framer-motion'
 import { FaFacebook, FaLinkedin, FaSkype, FaQuoteLeft } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function ChairmanMessageSection() {
   return (
-    <section className="testimonials-section sec-padd py-20 bg-gradient-to-br from-[#48C7EC] via-[#3ab5db] to-[#2aa3c9] relative overflow-hidden" id="testimonials">
+    <section className="testimonials-section sec-padd py-20 bg-gradient-to-br from-[#48C7EC] via-[#3ab5db] to-[#2aa3c9] relative overflow-hidden" id="chairman_message">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -26,7 +27,7 @@ export default function ChairmanMessageSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Message From <span className="text-[#fff]">Chairman</span>
           </h2>
-          <div className="w-24 h-1 bg-[#48C7EC] mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
         </motion.div>
 
         <motion.article
@@ -65,11 +66,12 @@ export default function ChairmanMessageSection() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="relative">
-                  <img
+                  <Image
                     src="/images/team/ashraf.jpeg"
                     alt="Engr. Md.Asraful Islam"
+                    width={128}
+                    height={128}
                     className="w-32 h-32 rounded-full object-cover border-4 border-[#48C7EC] shadow-lg"
-                    style={{ height: '128px', width: '128px' }}
                   />
                   
                   {/* Animated Border */}
@@ -119,7 +121,7 @@ export default function ChairmanMessageSection() {
                 </div>
               </motion.div>
               
-              <div className="text-center md:text-left flex-1" style={{ paddingLeft: '25px' }}>
+              <div className="text-center md:text-left flex-1 md:pl-6">
                 <motion.h4 
                   className="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                   initial={{ opacity: 0, x: -20 }}
@@ -169,10 +171,10 @@ export default function ChairmanMessageSection() {
               viewport={{ once: true }}
             >
               <blockquote className="text-center">
-                <p className="text-xl md:text-2xl text-gray-700 leading-relaxed italic font-medium mb-6 relative">
-                  <span className="text-yellow-500 text-6xl absolute -top-4 -left-4 opacity-20">&ldquo;</span>
-                  Mihisoft has helped us to just have a better handle on everything in our business – to actually make decisions and move forward to grow.
-                  <span className="text-yellow-500 text-6xl absolute -bottom-8 -right-4 opacity-20 rotate-180">&rdquo;</span>
+                <p className="text-xl md:text-2xl text-gray-700 leading-relaxed italic font-medium mb-6 relative px-8">
+                  <span className="text-yellow-500 text-5xl absolute -top-2 left-0 opacity-30">&ldquo;</span>
+                  At Mihisoft, we believe technology should empower businesses to achieve their fullest potential. Our mission is to bridge the gap between innovative ideas and practical solutions that drive real growth.
+                  <span className="text-yellow-500 text-5xl absolute -bottom-4 right-0 opacity-30">&rdquo;</span>
                 </p>
                 
                 {/* Additional inspiring message */}

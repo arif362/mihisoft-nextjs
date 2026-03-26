@@ -110,7 +110,7 @@ export default function Navigation() {
               </div>
             </div>
 
-            <a href="#portfolios" className="text-gray-700 hover:text-[#48C7EC] font-medium transition-colors" onClick={() => scrollToSection('portfolios')}>
+            <a href="#our_projects" className="text-gray-700 hover:text-[#48C7EC] font-medium transition-colors" onClick={() => scrollToSection('our_projects')}>
               Portfolios
             </a>
             <a href="#career" className="text-gray-700 hover:text-[#48C7EC] font-medium transition-colors" onClick={() => scrollToSection('career')}>
@@ -156,7 +156,7 @@ export default function Navigation() {
                 <a href="#services" className="block text-gray-700 hover:text-[#48C7EC] font-medium transition-colors" onClick={() => scrollToSection('services')}>
                   Services
                 </a>
-                <a href="#portfolios" className="block text-gray-700 hover:text-[#48C7EC] font-medium transition-colors" onClick={() => scrollToSection('portfolios')}>
+                <a href="#our_projects" className="block text-gray-700 hover:text-[#48C7EC] font-medium transition-colors" onClick={() => scrollToSection('our_projects')}>
                   Portfolios
                 </a>
                 <a href="#career" className="block text-gray-700 hover:text-[#48C7EC] font-medium transition-colors" onClick={() => scrollToSection('career')}>

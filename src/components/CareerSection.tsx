@@ -154,7 +154,7 @@ export default function CareerSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center"
         >
-          <h3 className="text-3xl font-bold mb-4">Don't See Your Role?</h3>
+          <h3 className="text-3xl font-bold mb-4">Don&apos;t See Your Role?</h3>
           <p className="text-xl mb-6">
             Send us your resume and let us know how you can contribute to our team
           </p>

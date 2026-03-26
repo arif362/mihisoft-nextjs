@@ -94,7 +94,7 @@ export default function Footer() {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('portfolios')}
+                  onClick={() => scrollToSection('our_projects')}
                   className="text-gray-300 hover:text-white transition-colors text-left"
                 >
                   Portfolio
@@ -159,7 +159,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Mihisoft Technologies. All rights reserved.
+              © {new Date().getFullYear()} Mihisoft Technologies. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
