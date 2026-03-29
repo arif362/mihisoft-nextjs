@@ -12,24 +12,24 @@ export default function HeroSection() {
   const slides = useMemo(() => [
     {
       image: '/images/slider/slider_tenax.png',
-      title: 'Building Smart Bangladesh with Technology',
-      subtitle: 'Leading software development company delivering innovative solutions that transform businesses and accelerate digital growth across Bangladesh and beyond.',
-      primaryCTA: 'Our Services',
-      secondaryCTA: 'Get Started'
+      title: 'Enterprise Digital Transformation Partner',
+      subtitle: 'Trusted by government agencies, financial institutions, and healthcare organizations worldwide. Delivering mission-critical solutions with 99.9% uptime and enterprise-grade security.',
+      primaryCTA: 'Enterprise Solutions',
+      secondaryCTA: 'Request Consultation'
     },
     {
       image: '/images/slider/m_4.png',
-      title: 'Expert Custom Software Development',
-      subtitle: 'From concept to deployment, we create cutting-edge mobile applications using the latest technologies that engage users and drive exceptional business results.',
-      primaryCTA: 'View Portfolio',
-      secondaryCTA: 'Start Project'
+      title: 'Secure & Scalable Enterprise Applications',
+      subtitle: 'From fintech platforms processing millions in transactions to healthcare systems protecting sensitive patient data — we build solutions that meet the highest security and compliance standards.',
+      primaryCTA: 'View Case Studies',
+      secondaryCTA: 'Talk to an Expert'
     },
     {
       image: '/images/slider/ai.webp',
-      title: 'Complete Digital Transformation',
-      subtitle: 'Empowering enterprises with comprehensive software solutions, cloud integration, and modern development practices for sustainable growth and competitive advantage.',
+      title: 'Government & Public Sector Excellence',
+      subtitle: 'Empowering digital governance with secure, accessible, and reliable e-government solutions. Professional development practices with dedicated 24/7 support.',
       primaryCTA: 'Learn More',
-      secondaryCTA: 'Get Quote'
+      secondaryCTA: 'Get Enterprise Quote'
     }
   ], [])
 
@@ -118,7 +118,7 @@ export default function HeroSection() {
                 transition={{ duration: 1, delay: 0.3 }}
               >
                 {slides[currentSlide].title.split(' ').map((word, index) => {
-                  if (word === 'Technology' || word === 'Development' || word === 'Transformation' || word === 'Bangladesh') {
+                  if (word === 'Enterprise' || word === 'Digital' || word === 'Transformation' || word === 'Secure' || word === 'Scalable' || word === 'Government' || word === 'Excellence') {
                     return <span key={index} className="bg-gradient-to-r from-[#48C7EC] to-cyan-400 bg-clip-text text-transparent">{word} </span>
                   }
                   return word + ' '

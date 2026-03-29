@@ -291,8 +291,8 @@ export default function TeamSection() {
                       <HiSparkles className="text-white w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs font-medium text-gray-500 uppercase tracking-wider">Leadership</div>
-                      <div className="text-lg font-bold text-gray-900">3 Experts</div>
+                      <div className="text-xs font-medium text-gray-500 uppercase tracking-wider">Established</div>
+                      <div className="text-lg font-bold text-gray-900">Since 2024</div>
                     </div>
                   </div>
                 </motion.div>

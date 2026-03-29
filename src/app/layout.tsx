@@ -13,29 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mihisoft Technologies Ltd. | Leading Software Development Company in Bangladesh",
-  description: "Mihisoft Technologies - Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. Successfully delivered 20+ projects across 9 countries. Outsource your RoR, PHP, .NET, iOS or Android project for innovative digital solutions.",
+  title: "Mihisoft Technologies Ltd. | Enterprise Software Development & Digital Transformation Partner",
+  description: "Mihisoft Technologies - Professional software development company delivering quality solutions for Government, Fintech, Healthcare & E-commerce. Secure development practices, dedicated support, and on-time delivery for applications across Bangladesh and beyond.",
   keywords: [
-    "Mihisoft Technologies",
-    "software development company bangladesh",
-    "ruby on rails company",
-    "ruby rails development", 
-    "php development",
-    "laravel development",
-    "wordpress developer",
-    "web and mobile development",
-    "node js development",
-    "react development",
-    "next js development",
-    "ux ui design",
-    "mobile app development",
-    "ios android development",
-    "custom software solutions",
+    "enterprise software development",
+    "government software solutions bangladesh",
+    "fintech application development",
+    "healthcare management system",
+    "e-commerce enterprise solutions",
+    "digital transformation services",
+    "custom enterprise applications",
+    "scalable software architecture",
+    "mission-critical systems",
+    "secure banking software",
+    "secure software development",
+    "PCI DSS software development",
+    "microservices architecture",
+    "cloud native applications",
+    "DevOps consulting",
     "IT outsourcing bangladesh",
-    "software outsourcing",
-    "e-commerce development",
-    "web application development",
-    "dot net development"
+    "software development company bangladesh",
+    "ruby on rails enterprise",
+    "react enterprise applications",
+    "mobile app development enterprise"
   ],
   authors: [{ name: "Mihisoft Technologies Ltd." }],
   robots: "index, follow",
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     "bingbot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   },
   openGraph: {
-    title: "Mihisoft Technologies Ltd. | Leading Software Development Company",
-    description: "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. Successfully delivered 20+ projects across 9 countries. Transform your business with innovative digital solutions.",
+    title: "Mihisoft Technologies Ltd. | Enterprise Software Development & Digital Transformation Partner",
+    description: "Professional software development company delivering quality solutions for Government, Fintech, Healthcare & E-commerce. Secure development practices with dedicated support.",
     url: "https://mihisoft.com/",
     siteName: "Mihisoft Technologies Ltd.",
     images: [
@@ -73,8 +73,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mihisoft.com"),
   twitter: {
     card: "summary_large_image",
-    title: "Mihisoft Technologies Ltd. | Leading Software Development Company",
-    description: "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. 20+ projects delivered across 9 countries.",
+    title: "Mihisoft Technologies Ltd. | Enterprise Software Development Partner",
+    description: "Trusted enterprise software partner for Government, Fintech, Healthcare & E-commerce. Mission-critical solutions with 99.9% uptime guarantee.",
     site: "@mihisoft",
     creator: "@mihisoft",
     images: ["https://mihisoft.com/images/logo/logo.png"],
@@ -119,7 +119,7 @@ export default function RootLayout({
               "name": "Mihisoft Technologies Ltd.",
               "url": "https://mihisoft.com",
               "logo": "https://mihisoft.com/images/logo/logo.png",
-              "description": "Expert software development company specializing in Ruby on Rails, Web & Mobile Applications. Successfully delivered 20+ projects across 9 countries.",
+              "description": "Professional software development company delivering quality solutions for Government, Fintech, Healthcare & E-commerce sectors with secure development practices.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "6/7, Block B, Mirpur 12, Pallabi",
@@ -153,13 +153,43 @@ export default function RootLayout({
                 "name": "Worldwide"
               },
               "services": [
-                "Software Development",
-                "Ruby on Rails Development", 
-                "Mobile App Development",
-                "Web Development",
-                "E-Commerce Solutions",
-                "Custom Software Solutions"
-              ]
+                "Enterprise Software Development",
+                "Government & Public Sector Solutions", 
+                "Fintech & Banking Applications",
+                "Healthcare Management Systems",
+                "E-Commerce Enterprise Platforms",
+                "Digital Transformation Consulting",
+                "Cloud Architecture & DevOps",
+                "Mobile Enterprise Applications",
+                "Custom Mission-Critical Systems"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Enterprise Software Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Government Software Solutions"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Fintech Application Development"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Healthcare IT Solutions"
+                    }
+                  }
+                ]
+              }
             }),
           }}
         />

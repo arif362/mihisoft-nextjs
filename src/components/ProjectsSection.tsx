@@ -11,40 +11,40 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      title: 'E-Library Management System',
-      category: 'Web Application',
+      title: 'Government E-Governance Portal',
+      category: 'Government & Public Sector',
       image: '/images/project/e-library-landing.png',
-      description: 'A comprehensive digital library management system with advanced search capabilities.'
+      description: 'Secure citizen services portal serving 2M+ users with multi-language support, SSO integration, and full audit compliance.'
     },
     {
-      title: 'Business Growth Strategy Platform',
-      category: 'Business Solution',
+      title: 'Fintech Payment Gateway',
+      category: 'Financial Services',
       image: '/images/project/business-growth-strategy.png',
-      description: 'Strategic planning and analytics platform for business growth optimization.'
+      description: 'Secure payment processing platform with robust transaction handling, fraud detection, and seamless integration capabilities.'
     },
     {
-      title: 'HRM System',
+      title: 'Enterprise HRMS Platform',
       category: 'Enterprise Software',
       image: '/images/project/hrm.png',
-      description: 'Complete human resource management system with payroll and attendance tracking.'
+      description: 'Comprehensive HR management system for 10,000+ employees with payroll, attendance, and compliance modules.'
     },
     {
-      title: 'Transport Management',
-      category: 'Logistics Solution',
+      title: 'Supply Chain Management',
+      category: 'Logistics & Operations',
       image: '/images/project/transport.jpeg',
-      description: 'End-to-end transportation and logistics management system.'
+      description: 'End-to-end supply chain solution with real-time tracking, inventory optimization, and predictive analytics.'
     },
     {
-      title: 'MihiShop E-Commerce',
-      category: 'E-Commerce Platform',
+      title: 'Enterprise E-Commerce Platform',
+      category: 'Retail & E-Commerce',
       image: '/images/project/mihishop.png',
-      description: 'Full-featured e-commerce platform with advanced inventory management.'
+      description: 'Multi-tenant e-commerce platform processing 1M+ orders/month with AI-powered recommendations.'
     },
     {
-      title: 'Mobile App Development',
-      category: 'Mobile Application',
+      title: 'Healthcare Management System',
+      category: 'Healthcare & Life Sciences',
       image: '/images/project/ios.png',
-      description: 'Cross-platform mobile applications for iOS and Android platforms.'
+      description: 'Secure healthcare platform with EHR/EMR features, telemedicine capabilities, and medical record management.'
     }
   ]
 
@@ -59,11 +59,17 @@ export default function ProjectsSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
+          <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Enterprise Case Studies
+          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-[#48C7EC]">Projects</span>
+            Proven <span className="text-[#48C7EC]">Success Stories</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our portfolio of successful projects that have helped businesses transform digitally
+            Explore mission-critical solutions we&apos;ve delivered for government agencies, financial institutions, and enterprise organizations worldwide
           </p>
         </motion.div>
 
@@ -119,14 +125,19 @@ export default function ProjectsSection() {
           className="mt-16 text-center"
         >
           <h3 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Start Your Project?
+            Ready to Build Your Enterprise Solution?
           </h3>
           <p className="text-xl text-gray-600 mb-8">
-            Let&apos;s discuss how we can bring your ideas to life
+            Let&apos;s discuss how we can deliver mission-critical solutions for your organization
           </p>
-          <button className="bg-[#48C7EC] hover:bg-[#3ab5db] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-            Start Your Project
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-[#48C7EC] hover:bg-[#3ab5db] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              Schedule Enterprise Demo
+            </button>
+            <button className="border-2 border-[#48C7EC] text-[#48C7EC] hover:bg-[#48C7EC] hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              Download Case Studies PDF
+            </button>
+          </div>
         </motion.div>
       </div>
     </section>

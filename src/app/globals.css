@@ -31,6 +31,60 @@ body {
   line-height: 1.6;
 }
 
+/* Accessibility - Focus states */
+*:focus {
+  outline: 2px solid #48C7EC;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid #48C7EC;
+  outline-offset: 2px;
+}
+
+/* Skip to main content link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #48C7EC;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode improvements */
+@media (prefers-contrast: high) {
+  button, a {
+    text-decoration: underline;
+  }
+  
+  .border {
+    border-width: 2px;
+  }
+}
+
 .boxed_wrapper {
   min-height: 100vh;
 }

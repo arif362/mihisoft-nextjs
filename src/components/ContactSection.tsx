@@ -47,11 +47,15 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
+          <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <Phone className="w-4 h-4" />
+            Enterprise Inquiries
+          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Get In <span className="text-[#48C7EC]">Touch</span>
+            Start Your <span className="text-[#48C7EC]">Enterprise Project</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to start your project? Contact us today for a free consultation
+            Schedule a consultation with our enterprise solutions team for government, fintech, healthcare, and large-scale projects
           </p>
         </motion.div>
 
@@ -63,15 +67,16 @@ export default function ContactSection() {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Enterprise Contact</h3>
             
             <div className="flex items-start space-x-4">
               <div className="bg-[#48C7EC] p-3 rounded-lg">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
+                <h4 className="font-semibold text-gray-900 mb-1">24/7 Enterprise Hotline</h4>
                 <p className="text-gray-600">+880 1771109794</p>
+                <p className="text-sm text-gray-500">Priority response for enterprise clients</p>
               </div>
             </div>
 
@@ -80,8 +85,9 @@ export default function ContactSection() {
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                <p className="text-gray-600">info@mihisoft.com</p>
+                <h4 className="font-semibold text-gray-900 mb-1">Enterprise Sales</h4>
+                <p className="text-gray-600">enterprise@mihisoft.com</p>
+                <p className="text-sm text-gray-500">Response within 4 business hours</p>
               </div>
             </div>
 
@@ -90,8 +96,9 @@ export default function ContactSection() {
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
+                <h4 className="font-semibold text-gray-900 mb-1">Global Headquarters</h4>
                 <p className="text-gray-600">6/7, Block B, Mirpur 12, Pallabi, Dhaka 1216</p>
+                <p className="text-sm text-gray-500">Bangladesh | Serving 15+ countries</p>
               </div>
             </div>
 

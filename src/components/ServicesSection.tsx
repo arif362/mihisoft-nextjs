@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
-import { Code, Smartphone, Globe, Palette, Settings, Shield, Monitor, Tablet } from 'lucide-react'
+import { Code, Smartphone, Globe, Palette, Settings, Shield, Monitor, Tablet, Building2, Landmark, HeartPulse, ShoppingCart } from 'lucide-react'
 
 export default function ServicesSection() {
   const ref = useRef(null)
@@ -12,51 +12,51 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: Globe,
-      title: 'Web Development',
-      description: 'The process of improving some measure of an enterprise\'s success. Business growth can be achieved either by boosting of the top line or revenue of the business.',
+      icon: Landmark,
+      title: 'Government & Public Sector',
+      description: 'Secure, scalable solutions for e-governance, citizen services, and public administration systems with full regulatory compliance and audit trails.',
       image: '/images/service/web_dev.png'
     },
     {
-      icon: Smartphone,
-      title: 'Mobile Development',
-      description: 'Sustainability is a priority interest for many of organizations, when it comes to sustainability and corporate responsibility, we believe the normal rules of business apply.',
+      icon: Building2,
+      title: 'Fintech & Banking Solutions',
+      description: 'Secure financial applications including payment gateways, digital banking, loan management, and real-time transaction processing systems with robust security measures.',
       image: '/images/service/mobile_dev.png'
     },
     {
-      icon: Code,
-      title: 'Custom Software Development',
-      description: 'In a contract, performance is deemed to be the fulfillment of an obligation, in a manner that releases the performer from all liabilities under the contract of both you and us.',
+      icon: HeartPulse,
+      title: 'Healthcare & Life Sciences',
+      description: 'Secure healthcare management systems, telemedicine platforms, EHR/EMR solutions, and medical device integrations following healthcare industry best practices.',
       image: '/images/service/custom_soft.png'
     },
     {
-      icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Business analytics is the practice of iterative, methodical exploration of organization\'s data with emphasis statistical analysis. Typically beyond those traditional business.',
+      icon: ShoppingCart,
+      title: 'Enterprise E-Commerce',
+      description: 'High-performance, multi-tenant e-commerce platforms handling millions of transactions with advanced inventory, analytics, and omnichannel capabilities.',
       image: '/images/service/ui_ux.png'
     },
     {
-      icon: Settings,
-      title: 'Maintenance',
-      description: 'Is an interpretation of trends in human behaviors which aims to increase effectiveness of a product or service for the consumer, as well as increase sales mutual benefit.',
+      icon: Code,
+      title: 'Custom Enterprise Software',
+      description: 'Bespoke enterprise applications with microservices architecture, API-first design, and seamless integration with existing enterprise systems and workflows.',
       image: '/images/service/maintenance.png'
     },
     {
       icon: Shield,
-      title: 'Quality Assurance (QA)',
-      description: 'We help business improve financial performance by ensuring the entire organization system is aligned and set up to deliver on the company\'s objectives of all the time.',
+      title: 'Security & Compliance',
+      description: 'Comprehensive security assessments, vulnerability testing, security consulting, and implementation of robust security frameworks for your applications.',
       image: '/images/service/qa.png'
     },
     {
       icon: Monitor,
-      title: 'Android App Development',
-      description: 'Explore our App Creation service, where we turn your innovative ideas into user-friendly mobile applications for iOS and Android platforms.',
+      title: 'Cloud & DevOps',
+      description: 'Enterprise cloud migration, Kubernetes orchestration, CI/CD pipelines, infrastructure automation, and 24/7 monitoring with 99.9% uptime SLA.',
       image: '/images/service/android_app_development.png'
     },
     {
-      icon: Tablet,
-      title: 'iOS App Development',
-      description: 'Explore our App Creation service, where we turn your innovative ideas into user-friendly mobile applications for iOS and Android platforms.',
+      icon: Smartphone,
+      title: 'Enterprise Mobile Apps',
+      description: 'Secure enterprise mobility solutions with MDM integration, biometric authentication, offline capabilities, and cross-platform deployment.',
       image: '/images/service/ios_app_development.png'
     }
   ]
@@ -72,11 +72,15 @@ export default function ServicesSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
+          <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <Shield className="w-4 h-4" />
+            Enterprise Solutions
+          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-[#48C7EC]">Services</span>
+            Enterprise <span className="text-[#48C7EC]">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We are experts in this industry with passionate and experienced team. What that means is you are going to get the right solution. Please find our services.
+            Mission-critical solutions for Government, Fintech, Healthcare, and E-commerce sectors with industry-leading security, compliance, and scalability.
           </p>
         </motion.div>
 
@@ -129,13 +133,18 @@ export default function ServicesSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16 bg-gradient-to-r from-[#48C7EC] to-[#3ab5db] rounded-lg p-8 text-white text-center"
         >
-          <h3 className="text-3xl font-bold mb-4">Need a Custom Solution?</h3>
+          <h3 className="text-3xl font-bold mb-4">Enterprise Partnership Inquiry</h3>
           <p className="text-xl mb-6">
-            We specialize in creating tailored solutions for unique business challenges
+            Looking for a trusted technology partner for your large-scale enterprise project? Schedule a consultation with our enterprise solutions team.
           </p>
-          <button className="bg-white text-[#48C7EC] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-            Get Custom Quote
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-[#48C7EC] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+              Request Enterprise Quote
+            </button>
+            <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-colors">
+              Download Capabilities Deck
+            </button>
+          </div>
         </motion.div>
       </div>
     </section>

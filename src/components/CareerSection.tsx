@@ -11,48 +11,48 @@ export default function CareerSection() {
 
   const jobOpenings = [
     {
-      title: 'Senior Full Stack Developer',
+      title: 'Senior Enterprise Architect',
+      department: 'Architecture',
+      location: 'Dhaka, Bangladesh',
+      type: 'Full Time',
+      experience: '8+ years',
+      description: 'Design and lead enterprise-scale microservices architectures for government and fintech clients with high availability requirements.'
+    },
+    {
+      title: 'Security & Compliance Engineer',
+      department: 'Security',
+      location: 'Dhaka, Bangladesh',
+      type: 'Full Time',
+      experience: '5-8 years',
+      description: 'Implement security frameworks, conduct security assessments, and ensure application security best practices for enterprise applications.'
+    },
+    {
+      title: 'Full Stack Developer (Enterprise)',
       department: 'Engineering',
       location: 'Dhaka, Bangladesh',
       type: 'Full Time',
-      experience: '3-5 years',
-      description: 'We are looking for an experienced full stack developer to join our team and work on exciting projects.'
+      experience: '4-7 years',
+      description: 'Build mission-critical applications for government and healthcare sectors using modern frameworks and cloud-native technologies.'
     },
     {
-      title: 'UI/UX Designer',
-      department: 'Design',
-      location: 'Dhaka, Bangladesh',
-      type: 'Full Time',
-      experience: '2-4 years',
-      description: 'Join our creative team to design exceptional user experiences for web and mobile applications.'
-    },
-    {
-      title: 'Mobile App Developer',
-      department: 'Engineering',
-      location: 'Dhaka, Bangladesh',
-      type: 'Full Time',
-      experience: '2-5 years',
-      description: 'Develop cutting-edge mobile applications for iOS and Android platforms using modern technologies.'
-    },
-    {
-      title: 'DevOps Engineer',
+      title: 'DevOps & SRE Engineer',
       department: 'Infrastructure',
       location: 'Dhaka, Bangladesh',
       type: 'Full Time',
-      experience: '3-6 years',
-      description: 'Help us build and maintain scalable infrastructure and deployment pipelines.'
+      experience: '5-8 years',
+      description: 'Maintain 99.9% uptime SLA, implement CI/CD pipelines, and manage Kubernetes clusters for enterprise clients.'
     }
   ]
 
   const benefits = [
-    'Competitive salary and benefits',
-    'Flexible working hours',
-    'Professional development opportunities',
-    'Modern office environment',
-    'Health insurance coverage',
-    'Performance bonuses',
-    'Team building activities',
-    'Career advancement paths'
+    'Competitive enterprise-level salary',
+    'Work on government & fintech projects',
+    'International client exposure',
+    'Industry certifications sponsorship',
+    'Comprehensive health coverage',
+    'Performance-based bonuses',
+    'Remote work flexibility',
+    'Clear leadership pathway'
   ]
 
   return (
@@ -66,11 +66,15 @@ export default function CareerSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
+          <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <Users className="w-4 h-4" />
+            Build Enterprise Solutions
+          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Join Our <span className="text-[#48C7EC]">Team</span>
+            Join Our <span className="text-[#48C7EC]">Enterprise Team</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Build your career with us and be part of creating innovative solutions that make a difference
+            Work on mission-critical projects for government agencies, financial institutions, and global enterprises
           </p>
         </motion.div>
 
