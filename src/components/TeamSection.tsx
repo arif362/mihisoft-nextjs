@@ -230,6 +230,113 @@ export default function TeamSection() {
           ))}
         </div>
 
+        {/* Team Group Photo Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="mt-20 max-w-6xl mx-auto px-4"
+        >
+          {/* Section Title */}
+          <div className="text-center mb-10">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#48C7EC]/20 to-cyan-400/20 text-[#48C7EC] px-5 py-2.5 rounded-full text-sm font-semibold mb-4 border border-[#48C7EC]/30"
+            >
+              <FaUsers className="w-4 h-4" />
+              The Dream Team
+            </motion.div>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Together We <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#48C7EC] to-cyan-500">Innovate</span>
+            </h3>
+          </div>
+
+          <div className="relative group cursor-pointer">
+            {/* Animated Background Glow */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#48C7EC] via-purple-500 to-cyan-400 rounded-3xl opacity-0 group-hover:opacity-70 blur-xl transition-all duration-700 animate-pulse"></div>
+            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 via-[#48C7EC] to-purple-500 rounded-3xl opacity-20 group-hover:opacity-40 blur-2xl transition-all duration-500"></div>
+            
+            {/* Corner Decorations */}
+            <div className="absolute -top-3 -left-3 w-8 h-8 border-t-4 border-l-4 border-[#48C7EC] rounded-tl-xl opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute -top-3 -right-3 w-8 h-8 border-t-4 border-r-4 border-cyan-400 rounded-tr-xl opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute -bottom-3 -left-3 w-8 h-8 border-b-4 border-l-4 border-cyan-400 rounded-bl-xl opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute -bottom-3 -right-3 w-8 h-8 border-b-4 border-r-4 border-[#48C7EC] rounded-br-xl opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+            
+            {/* Image Container */}
+            <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl border-2 border-white/50 group-hover:border-[#48C7EC]/50 transition-all duration-500">
+              <div className="relative h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] overflow-hidden">
+                <Image
+                  src="/images/team/team-group-photo.webp"
+                  alt="Mihisoft Technologies Leadership Team"
+                  fill
+                  className="object-cover transition-all duration-1000 group-hover:scale-110 group-hover:brightness-105"
+                  priority
+                />
+                
+                {/* Multi-layer Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-70"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#48C7EC]/10 via-transparent to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                
+                {/* Floating Badge */}
+                <motion.div 
+                  className="absolute top-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl px-5 py-3 shadow-xl border border-white/50"
+                  whileHover={{ scale: 1.05, rotate: 2 }}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-[#48C7EC] to-cyan-500 rounded-xl flex items-center justify-center shadow-lg">
+                      <HiSparkles className="text-white w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium text-gray-500 uppercase tracking-wider">Leadership</div>
+                      <div className="text-lg font-bold text-gray-900">3 Experts</div>
+                    </div>
+                  </div>
+                </motion.div>
+                
+                {/* Caption Overlay with Glass Effect */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                  <motion.div 
+                    className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-white/20 shadow-2xl"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                      <div>
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-white/90 text-sm font-semibold uppercase tracking-widest">United in Vision</span>
+                        </div>
+                        <h3 className="text-2xl md:text-4xl font-bold text-white mb-3 leading-tight">
+                          Driven by <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#48C7EC] to-cyan-300">Excellence</span>
+                        </h3>
+                        <p className="text-white/70 text-sm md:text-base max-w-xl leading-relaxed">
+                          Our leadership team brings decades of combined experience in technology, innovation, and strategic business growth.
+                        </p>
+                      </div>
+                      <motion.button
+                        className="flex-shrink-0 bg-gradient-to-r from-[#48C7EC] to-cyan-500 text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 group/btn"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <span>Meet the Team</span>
+                        <svg className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </motion.button>
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Bottom Stats Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
