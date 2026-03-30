@@ -64,7 +64,7 @@ export default function Navigation() {
 
           {/* Desktop Menu */}
           <nav className="hidden lg:flex items-center space-x-1">
-            <a href="#" className={navLinkClass}>
+            <a href="#top" className={navLinkClass} onClick={() => scrollToSection('top')}>
               <span className="px-4">Home</span>
               <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 group-hover:w-3/4 transition-all duration-300" />
             </a>
@@ -72,6 +72,7 @@ export default function Navigation() {
             {/* About Us Dropdown */}
             <div className="relative group">
               <button
+                type="button"
                 className={`${navLinkClass} flex items-center px-4`}
                 onClick={() => handleDropdownToggle('about')}
               >
@@ -113,6 +114,7 @@ export default function Navigation() {
             {/* Services Dropdown */}
             <div className="relative group">
               <button
+                type="button"
                 className={`${navLinkClass} flex items-center px-4`}
                 onClick={() => handleDropdownToggle('services')}
               >
@@ -159,6 +161,7 @@ export default function Navigation() {
             {/* Software Dropdown */}
             <div className="relative group">
               <button
+                type="button"
                 className={`${navLinkClass} flex items-center px-4`}
                 onClick={() => handleDropdownToggle('software')}
               >

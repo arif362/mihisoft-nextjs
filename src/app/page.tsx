@@ -13,7 +13,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div className="boxed_wrapper">
+    <div id="top" className="boxed_wrapper">
       <Header />
       <Navigation />
       <HeroSection />

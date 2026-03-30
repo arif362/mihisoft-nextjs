@@ -141,6 +141,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <button
+                  type="button"
                   onClick={() => scrollToSection('about_us')}
                   className="bg-gradient-to-r from-[#48C7EC] to-[#3ab5db] hover:from-[#3ab5db] hover:to-[#2aa3c9] text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
                 >
@@ -149,6 +150,7 @@ export default function HeroSection() {
                 </button>
                 
                 <button
+                  type="button"
                   onClick={() => scrollToSection('contact_us')}
                   className="border-2 border-white/80 backdrop-blur-sm bg-white/10 text-white hover:bg-white hover:text-gray-900 px-10 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 text-lg"
                 >
@@ -166,7 +168,9 @@ export default function HeroSection() {
         {slides.map((_, index) => (
           <motion.button
             key={index}
+            type="button"
             onClick={() => goToSlide(index)}
+            aria-label={`Go to slide ${index + 1}`}
             className={`transition-all duration-300 ${
               index === currentSlide
                 ? 'w-12 h-3 bg-white rounded-full'
@@ -184,7 +188,9 @@ export default function HeroSection() {
           {currentSlide + 1} / {slides.length}
         </div>
         <motion.button
+          type="button"
           onClick={togglePlayPause}
+          aria-label={isPlaying ? 'Pause hero slider' : 'Play hero slider'}
           className="bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

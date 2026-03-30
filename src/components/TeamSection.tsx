@@ -139,6 +139,7 @@ export default function TeamSection() {
                               href={member.social.facebook} 
                               target="_blank" 
                               rel="noopener noreferrer"
+                              aria-label={`${member.name} Facebook profile`}
                               className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#48C7EC] transition-all duration-300"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.95 }}
@@ -151,6 +152,7 @@ export default function TeamSection() {
                               href={member.social.linkedin} 
                               target="_blank" 
                               rel="noopener noreferrer"
+                              aria-label={`${member.name} LinkedIn profile`}
                               className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#48C7EC] transition-all duration-300"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.95 }}
@@ -161,6 +163,9 @@ export default function TeamSection() {
                           <li>
                             <motion.a 
                               href={member.social.skype}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={`${member.name} Skype profile`}
                               className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#48C7EC] transition-all duration-300"
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.95 }}

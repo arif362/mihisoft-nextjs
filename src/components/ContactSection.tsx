@@ -40,10 +40,29 @@ export default function ContactSection() {
       return
     }
 
+    let endpointUrl: URL
+    try {
+      endpointUrl = new URL(CONTACT_FORM_ENDPOINT)
+    } catch {
+      setSubmitMessage({
+        type: 'error',
+        text: 'Contact form endpoint is invalid. Please check NEXT_PUBLIC_CONTACT_FORM_ENDPOINT.',
+      })
+      return
+    }
+
+    if (endpointUrl.protocol !== 'https:' || endpointUrl.hostname !== 'formspree.io') {
+      setSubmitMessage({
+        type: 'error',
+        text: 'Contact form endpoint must be a secure Formspree URL.',
+      })
+      return
+    }
+
     setIsSubmitting(true)
 
     try {
-      const response = await fetch(CONTACT_FORM_ENDPOINT, {
+      const response = await fetch(endpointUrl.toString(), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -247,6 +266,7 @@ export default function ContactSection() {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
+                    autoComplete="name"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors"
                     placeholder="Your Name"
@@ -262,6 +282,7 @@ export default function ContactSection() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
+                    autoComplete="email"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors"
                     placeholder="your@email.com"
@@ -280,6 +301,7 @@ export default function ContactSection() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
+                    autoComplete="tel"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors"
                     placeholder="+880 1XXXXXXXXX"
                   />
@@ -294,6 +316,7 @@ export default function ContactSection() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
+                    autoComplete="off"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors"
                     placeholder="Project Inquiry"
@@ -310,6 +333,7 @@ export default function ContactSection() {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
+                  autoComplete="off"
                   required
                   rows={6}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors resize-none"
@@ -320,6 +344,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
+                aria-busy={isSubmitting}
                 className="w-full bg-[#48C7EC] hover:bg-[#3ab5db] disabled:bg-[#48C7EC]/60 disabled:cursor-not-allowed text-white py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
@@ -328,6 +353,8 @@ export default function ContactSection() {
 
               {submitMessage && (
                 <p
+                  role="status"
+                  aria-live="polite"
                   className={`text-sm font-medium ${
                     submitMessage.type === 'success' ? 'text-green-600' : 'text-red-600'
                   }`}

@@ -76,6 +76,7 @@ export default function Footer() {
                 href="https://wa.me/+8801771109794" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Chat with Mihisoft on WhatsApp"
                 className="bg-gray-800 p-3 rounded-lg hover:bg-green-600 transition-colors"
               >
                 <FaWhatsapp className="w-5 h-5" />
@@ -84,6 +85,7 @@ export default function Footer() {
                 href="https://www.facebook.com/mihisoft" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Mihisoft on Facebook"
                 className="bg-gray-800 p-3 rounded-lg hover:bg-[#48C7EC] transition-colors"
               >
                 <FaFacebook className="w-5 h-5" />
@@ -92,6 +94,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/mihisoft" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Mihisoft on LinkedIn"
                 className="bg-gray-800 p-3 rounded-lg hover:bg-[#3ab5db] transition-colors"
               >
                 <FaLinkedin className="w-5 h-5" />
@@ -100,6 +103,7 @@ export default function Footer() {
                 href="https://www.youtube.com/@mihisofttechnologies3793" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Mihisoft on YouTube"
                 className="bg-gray-800 p-3 rounded-lg hover:bg-red-600 transition-colors"
               >
                 <FaYoutube className="w-5 h-5" />

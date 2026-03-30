@@ -16,8 +16,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export",
+    "lint": "eslint .",
+    "export": "next build",
     "deploy": "./deploy.sh",
     "build:static": "next build"
   },

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon.svg", type: "image/svg+xml" }
     ],
     shortcut: "/favicon.svg",
@@ -82,6 +82,13 @@ export const metadata: Metadata = {
   verification: {},
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#48C7EC',
+  colorScheme: 'light',
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -91,7 +98,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
