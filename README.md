@@ -67,6 +67,56 @@ yarn dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+### Contact Form Email Setup (No Database)
+
+The contact form sends emails through SMTP using a Next.js API route.
+
+1. Copy environment template:
+```bash
+cp .env.example .env.local
+```
+
+2. Configure these values in `.env.local`:
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASSWORD`
+- `CONTACT_TO_EMAILS` (comma-separated receivers)
+
+Recommended local config:
+```dotenv
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=mihisofttechnologies@gmail.com
+SMTP_PASSWORD=your-gmail-app-password
+CONTACT_TO_EMAILS=sales@mihisoft.com,support@mihisoft.com
+CONTACT_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+```
+
+For Gmail, create and use an App Password (do not use your normal Gmail password).
+
+Optional security tuning:
+- `CONTACT_RATE_LIMIT_MAX`
+- `CONTACT_RATE_LIMIT_WINDOW_MS`
+- `CONTACT_MAX_NAME_LENGTH`
+- `CONTACT_MAX_PHONE_LENGTH`
+- `CONTACT_MAX_SUBJECT_LENGTH`
+- `CONTACT_MAX_MESSAGE_LENGTH`
+
+3. Restart the dev server and submit the contact form.
+
+Built-in anti-spam protections:
+- Hidden honeypot field to block basic bots
+- API rate limit (5 requests per IP per 10 minutes)
+
+### Environment File Strategy
+
+- Use `.env.local` for local development secrets (ignored by git)
+- Use `.env.example` as the committed template (safe placeholders only)
+- For staging/production, configure env variables in your hosting platform (do not commit `.env.production`)
+- `.gitignore` already excludes `.env`, `.env.*`, and keeps only `.env.example`
+
 ### Build for Production
 
 ```bash

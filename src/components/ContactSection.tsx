@@ -8,12 +8,15 @@ import { Phone, Mail, MapPin, Send } from 'lucide-react'
 export default function ContactSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     subject: '',
-    message: ''
+    message: '',
+    website: ''
   })
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -23,17 +26,51 @@ export default function ContactSection() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implement form submission (e.g., API call, email service)
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    })
+    setSubmitMessage(null)
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = (await response.json()) as { error?: string }
+
+      if (!response.ok) {
+        setSubmitMessage({
+          type: 'error',
+          text: result.error || 'Failed to send message. Please try again.',
+        })
+        return
+      }
+
+      setSubmitMessage({
+        type: 'success',
+        text: 'Your message has been sent successfully. We will contact you soon.',
+      })
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        website: ''
+      })
+    } catch {
+      setSubmitMessage({
+        type: 'error',
+        text: 'Network error. Please try again in a moment.',
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -174,6 +211,19 @@ export default function ContactSection() {
             transition={{ duration: 0.8 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="hidden" aria-hidden="true">
+                <label htmlFor="website">Website</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  value={formData.website}
+                  onChange={handleInputChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -257,11 +307,22 @@ export default function ContactSection() {
 
               <button
                 type="submit"
-                className="w-full bg-[#48C7EC] hover:bg-[#3ab5db] text-white py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+                disabled={isSubmitting}
+                className="w-full bg-[#48C7EC] hover:bg-[#3ab5db] disabled:bg-[#48C7EC]/60 disabled:cursor-not-allowed text-white py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
-                <span>Send Message</span>
+                <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
               </button>
+
+              {submitMessage && (
+                <p
+                  className={`text-sm font-medium ${
+                    submitMessage.type === 'success' ? 'text-green-600' : 'text-red-600'
+                  }`}
+                >
+                  {submitMessage.text}
+                </p>
+              )}
             </form>
           </motion.div>
         </div>
