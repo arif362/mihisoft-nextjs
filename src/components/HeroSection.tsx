@@ -12,14 +12,14 @@ export default function HeroSection() {
   const slides = useMemo(() => [
     {
       image: '/images/slider/slider_tenax.png',
-      title: 'Enterprise Digital Transformation Partner',
-      subtitle: 'Trusted by government agencies, financial institutions, and healthcare organizations worldwide. Delivering mission-critical solutions with 99.9% uptime and enterprise-grade security.',
-      primaryCTA: 'Enterprise Solutions',
+      title: 'Your Digital Transformation Partner',
+      subtitle: 'Trusted by government agencies, financial institutions, and healthcare organizations worldwide. Delivering mission-critical solutions with reliable performance and robust security.',
+      primaryCTA: 'Our Solutions',
       secondaryCTA: 'Request Consultation'
     },
     {
       image: '/images/slider/m_4.png',
-      title: 'Secure & Scalable Enterprise Applications',
+      title: 'Secure & Scalable Applications',
       subtitle: 'From fintech platforms processing millions in transactions to healthcare systems protecting sensitive patient data — we build solutions that meet the highest security and compliance standards.',
       primaryCTA: 'View Case Studies',
       secondaryCTA: 'Talk to an Expert'
@@ -29,7 +29,7 @@ export default function HeroSection() {
       title: 'Government & Public Sector Excellence',
       subtitle: 'Empowering digital governance with secure, accessible, and reliable e-government solutions. Professional development practices with dedicated 24/7 support.',
       primaryCTA: 'Learn More',
-      secondaryCTA: 'Get Enterprise Quote'
+      secondaryCTA: 'Get a Quote'
     }
   ], [])
 
@@ -118,7 +118,7 @@ export default function HeroSection() {
                 transition={{ duration: 1, delay: 0.3 }}
               >
                 {slides[currentSlide].title.split(' ').map((word, index) => {
-                  if (word === 'Enterprise' || word === 'Digital' || word === 'Transformation' || word === 'Secure' || word === 'Scalable' || word === 'Government' || word === 'Excellence') {
+                  if (word === 'Your' || word === 'Digital' || word === 'Transformation' || word === 'Partner' || word === 'Secure' || word === 'Scalable' || word === 'Government' || word === 'Excellence') {
                     return <span key={index} className="bg-gradient-to-r from-[#48C7EC] to-cyan-400 bg-clip-text text-transparent">{word} </span>
                   }
                   return word + ' '

@@ -45,10 +45,10 @@ export default function ClientsSection() {
         >
           <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-medium mb-4">
             <HiSparkles className="w-4 h-4" />
-            Trusted Enterprise Partners
+            Trusted Partners
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#48C7EC] to-cyan-400">Enterprise Clients</span>
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#48C7EC] to-cyan-400">Valued Clients</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Trusted by government agencies, financial institutions, and Fortune 500 companies across 15+ countries
@@ -119,7 +119,7 @@ export default function ClientsSection() {
           className="grid grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {[
-            { value: '50+', label: 'Enterprise Clients', color: 'from-[#48C7EC] to-cyan-400' },
+            { value: '50+', label: 'Happy Clients', color: 'from-[#48C7EC] to-cyan-400' },
             { value: '100+', label: 'Projects Delivered', color: 'from-purple-500 to-pink-500' },
             { value: '15+', label: 'Countries Served', color: 'from-green-500 to-emerald-400' },
             { value: '99.9%', label: 'Uptime Guarantee', color: 'from-orange-500 to-yellow-400' },

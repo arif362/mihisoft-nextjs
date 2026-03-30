@@ -23,8 +23,8 @@ export default function ProjectsSection() {
       description: 'Secure payment processing platform with robust transaction handling, fraud detection, and seamless integration capabilities.'
     },
     {
-      title: 'Enterprise HRMS Platform',
-      category: 'Enterprise Software',
+      title: 'HRMS Platform',
+      category: 'Business Software',
       image: '/images/project/hrm.png',
       description: 'Comprehensive HR management system for 10,000+ employees with payroll, attendance, and compliance modules.'
     },
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       description: 'End-to-end supply chain solution with real-time tracking, inventory optimization, and predictive analytics.'
     },
     {
-      title: 'Enterprise E-Commerce Platform',
+      title: 'E-Commerce Platform',
       category: 'Retail & E-Commerce',
       image: '/images/project/mihishop.png',
       description: 'Multi-tenant e-commerce platform processing 1M+ orders/month with AI-powered recommendations.'
@@ -63,13 +63,13 @@ export default function ProjectsSection() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            Enterprise Case Studies
+            Our Portfolio
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Proven <span className="text-[#48C7EC]">Success Stories</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore mission-critical solutions we&apos;ve delivered for government agencies, financial institutions, and enterprise organizations worldwide
+            Explore mission-critical solutions we&apos;ve delivered for government agencies, financial institutions, and organizations worldwide
           </p>
         </motion.div>
 
@@ -125,14 +125,14 @@ export default function ProjectsSection() {
           className="mt-16 text-center"
         >
           <h3 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Build Your Enterprise Solution?
+            Ready to Build Your Solution?
           </h3>
           <p className="text-xl text-gray-600 mb-8">
             Let&apos;s discuss how we can deliver mission-critical solutions for your organization
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-[#48C7EC] hover:bg-[#3ab5db] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Schedule Enterprise Demo
+              Schedule a Demo
             </button>
             <button className="border-2 border-[#48C7EC] text-[#48C7EC] hover:bg-[#48C7EC] hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors">
               Download Case Studies PDF

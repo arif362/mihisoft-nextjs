@@ -11,12 +11,12 @@ export default function CareerSection() {
 
   const jobOpenings = [
     {
-      title: 'Senior Enterprise Architect',
+      title: 'Senior Software Architect',
       department: 'Architecture',
       location: 'Dhaka, Bangladesh',
       type: 'Full Time',
       experience: '8+ years',
-      description: 'Design and lead enterprise-scale microservices architectures for government and fintech clients with high availability requirements.'
+      description: 'Design and lead scalable microservices architectures for government and fintech clients with high availability requirements.'
     },
     {
       title: 'Security & Compliance Engineer',
@@ -24,10 +24,10 @@ export default function CareerSection() {
       location: 'Dhaka, Bangladesh',
       type: 'Full Time',
       experience: '5-8 years',
-      description: 'Implement security frameworks, conduct security assessments, and ensure application security best practices for enterprise applications.'
+      description: 'Implement security frameworks, conduct security assessments, and ensure application security best practices.'
     },
     {
-      title: 'Full Stack Developer (Enterprise)',
+      title: 'Full Stack Developer',
       department: 'Engineering',
       location: 'Dhaka, Bangladesh',
       type: 'Full Time',
@@ -40,12 +40,12 @@ export default function CareerSection() {
       location: 'Dhaka, Bangladesh',
       type: 'Full Time',
       experience: '5-8 years',
-      description: 'Maintain 99.9% uptime SLA, implement CI/CD pipelines, and manage Kubernetes clusters for enterprise clients.'
+      description: 'Maintain high availability, implement CI/CD pipelines, and manage Kubernetes clusters for our clients.'
     }
   ]
 
   const benefits = [
-    'Competitive enterprise-level salary',
+    'Competitive salary & benefits',
     'Work on government & fintech projects',
     'International client exposure',
     'Industry certifications sponsorship',
@@ -68,13 +68,13 @@ export default function CareerSection() {
         >
           <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Users className="w-4 h-4" />
-            Build Enterprise Solutions
+            Join Our Team
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Join Our <span className="text-[#48C7EC]">Enterprise Team</span>
+            Career <span className="text-[#48C7EC]">Opportunities</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Work on mission-critical projects for government agencies, financial institutions, and global enterprises
+            Work on mission-critical projects for government agencies, financial institutions, and leading organizations
           </p>
         </motion.div>
 

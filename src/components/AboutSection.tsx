@@ -10,10 +10,10 @@ export default function AboutSection() {
   const isInView = useInView(ref, { once: true })
 
   const stats = [
-    { icon: Users, number: '50+', label: 'Enterprise Clients' },
+    { icon: Users, number: '50+', label: 'Happy Clients' },
     { icon: Award, number: '99.9%', label: 'Uptime Guarantee' },
     { icon: CheckCircle, number: '100+', label: 'Projects Delivered' },
-    { icon: Clock, number: '24/7', label: 'Enterprise Support' },
+    { icon: Clock, number: '24/7', label: 'Dedicated Support' },
   ]
 
   return (
@@ -29,19 +29,19 @@ export default function AboutSection() {
           >
             <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-semibold mb-4">
               <Award className="w-4 h-4" />
-              Enterprise-Grade Solutions
+              Professional Solutions
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               About <span className="text-[#48C7EC]">Mihisoft</span>
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Mihisoft Technologies is a trusted enterprise software development partner delivering 
+              Mihisoft Technologies is a trusted software development partner delivering 
               mission-critical solutions for Government, Fintech, Healthcare, and E-commerce sectors. 
               With secure development practices and a commitment to excellence, we help 
               organizations achieve digital transformation at scale.
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Our mission is to empower enterprises with secure, scalable, and innovative technology 
+              Our mission is to empower businesses with secure, scalable, and innovative technology 
               solutions that drive operational efficiency, ensure regulatory compliance, and create 
               lasting competitive advantage in the global marketplace.
             </p>
@@ -52,7 +52,7 @@ export default function AboutSection() {
                 'Government & Public Sector Solutions',
                 'Fintech & Banking Applications',
                 'Healthcare Management Systems',
-                'Enterprise E-Commerce Platforms',
+                'E-Commerce Platforms',
                 'Cloud-Native Architecture & DevOps'
               ].map((feature, index) => (
                 <motion.div
@@ -74,7 +74,7 @@ export default function AboutSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="bg-[#48C7EC] hover:bg-[#3ab5db] text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
-              Schedule Enterprise Consultation
+              Schedule a Consultation
             </motion.button>
           </motion.div>
 
@@ -109,12 +109,12 @@ export default function AboutSection() {
           className="mt-20"
         >
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Why Enterprises Choose Us
+            Why Clients Choose Us
           </h3>
           <div className="max-w-4xl mx-auto space-y-6">
             {[
               {
-                question: "How do you ensure security and compliance for enterprise applications?",
+                question: "How do you ensure security and compliance for applications?",
                 answer: "We follow industry-leading security practices including OWASP guidelines, implement end-to-end encryption, and conduct regular security audits. Our team is experienced in developing solutions that meet various industry security requirements."
               },
               {
@@ -122,8 +122,8 @@ export default function AboutSection() {
                 answer: "Absolutely. We have extensive experience delivering mission-critical solutions for government agencies and financial institutions, with robust architecture designed for high availability, scalability, and stringent security requirements."
               },
               {
-                question: "What is your approach to enterprise-level support and SLA?",
-                answer: "We offer 24/7 dedicated support with guaranteed response times, 99.9% uptime SLA, dedicated account managers, and comprehensive documentation. Our enterprise clients receive priority support with direct access to senior engineers."
+                question: "What is your approach to support and maintenance?",
+                answer: "We offer 24/7 dedicated support with guaranteed response times, 99.9% uptime commitment, dedicated account managers, and comprehensive documentation. Our clients receive priority support with direct access to senior engineers."
               }
             ].map((faq, index) => (
               <motion.div

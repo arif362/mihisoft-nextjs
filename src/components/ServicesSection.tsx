@@ -31,14 +31,14 @@ export default function ServicesSection() {
     },
     {
       icon: ShoppingCart,
-      title: 'Enterprise E-Commerce',
-      description: 'High-performance, multi-tenant e-commerce platforms handling millions of transactions with advanced inventory, analytics, and omnichannel capabilities.',
+      title: 'E-Commerce Solutions',
+      description: 'High-performance e-commerce platforms with advanced inventory management, analytics, and omnichannel capabilities for seamless customer experiences.',
       image: '/images/service/ui_ux.png'
     },
     {
       icon: Code,
-      title: 'Custom Enterprise Software',
-      description: 'Bespoke enterprise applications with microservices architecture, API-first design, and seamless integration with existing enterprise systems and workflows.',
+      title: 'Custom Software Development',
+      description: 'Bespoke business applications with modern architecture, API-first design, and seamless integration with your existing systems and workflows.',
       image: '/images/service/maintenance.png'
     },
     {
@@ -50,13 +50,13 @@ export default function ServicesSection() {
     {
       icon: Monitor,
       title: 'Cloud & DevOps',
-      description: 'Enterprise cloud migration, Kubernetes orchestration, CI/CD pipelines, infrastructure automation, and 24/7 monitoring with 99.9% uptime SLA.',
+      description: 'Cloud migration, Kubernetes orchestration, CI/CD pipelines, infrastructure automation, and 24/7 monitoring for reliable performance.',
       image: '/images/service/android_app_development.png'
     },
     {
       icon: Smartphone,
-      title: 'Enterprise Mobile Apps',
-      description: 'Secure enterprise mobility solutions with MDM integration, biometric authentication, offline capabilities, and cross-platform deployment.',
+      title: 'Mobile App Development',
+      description: 'Secure mobile solutions with biometric authentication, offline capabilities, and cross-platform deployment for iOS and Android.',
       image: '/images/service/ios_app_development.png'
     }
   ]
@@ -74,10 +74,10 @@ export default function ServicesSection() {
         >
           <div className="inline-flex items-center gap-2 bg-[#48C7EC]/10 text-[#48C7EC] px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Shield className="w-4 h-4" />
-            Enterprise Solutions
+            What We Offer
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Enterprise <span className="text-[#48C7EC]">Services</span>
+            Our <span className="text-[#48C7EC]">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Mission-critical solutions for Government, Fintech, Healthcare, and E-commerce sectors with industry-leading security, compliance, and scalability.
@@ -133,13 +133,13 @@ export default function ServicesSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16 bg-gradient-to-r from-[#48C7EC] to-[#3ab5db] rounded-lg p-8 text-white text-center"
         >
-          <h3 className="text-3xl font-bold mb-4">Enterprise Partnership Inquiry</h3>
+          <h3 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
           <p className="text-xl mb-6">
-            Looking for a trusted technology partner for your large-scale enterprise project? Schedule a consultation with our enterprise solutions team.
+            Looking for a trusted technology partner for your next project? Schedule a consultation with our solutions team today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-[#48C7EC] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-              Request Enterprise Quote
+              Request a Quote
             </button>
             <button className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-colors">
               Download Capabilities Deck

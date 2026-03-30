@@ -61,7 +61,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              Mihisoft Technologies is a trusted enterprise software development partner delivering 
+              Mihisoft Technologies is a trusted software development partner delivering 
               mission-critical solutions for Government, Fintech, Healthcare, and E-commerce sectors 
               across Bangladesh and beyond with secure development practices.
             </p>
@@ -109,7 +109,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Enterprise Solutions</h3>
+            <h3 className="text-xl font-semibold mb-6">Our Solutions</h3>
             <ul className="space-y-3">
               <li>
                 <button 
@@ -156,7 +156,7 @@ export default function Footer() {
                   onClick={() => scrollToSection('contact_us')}
                   className="text-gray-300 hover:text-white transition-colors text-left"
                 >
-                  Enterprise Support
+                  Contact Support
                 </button>
               </li>
             </ul>
@@ -164,20 +164,20 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Enterprise Support</h3>
+            <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-[#48C7EC] mt-1" />
                 <div>
                   <p className="text-gray-300">+880 1771109794</p>
-                  <p className="text-xs text-gray-500">24/7 Enterprise Hotline</p>
+                  <p className="text-xs text-gray-500">Available 24/7</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-[#48C7EC] mt-1" />
                 <div>
-                  <p className="text-gray-300">enterprise@mihisoft.com</p>
-                  <p className="text-xs text-gray-500">Priority Response &lt; 4 hours</p>
+                  <p className="text-gray-300">info@mihisoft.com</p>
+                  <p className="text-xs text-gray-500">Quick Response</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">

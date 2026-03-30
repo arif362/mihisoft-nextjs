@@ -13,16 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mihisoft Technologies Ltd. | Enterprise Software Development & Digital Transformation Partner",
+  title: "Mihisoft Technologies Ltd. | Professional Software Development & Digital Transformation",
   description: "Mihisoft Technologies - Professional software development company delivering quality solutions for Government, Fintech, Healthcare & E-commerce. Secure development practices, dedicated support, and on-time delivery for applications across Bangladesh and beyond.",
   keywords: [
-    "enterprise software development",
+    "software development company",
     "government software solutions bangladesh",
     "fintech application development",
     "healthcare management system",
-    "e-commerce enterprise solutions",
+    "e-commerce solutions",
     "digital transformation services",
-    "custom enterprise applications",
+    "custom software applications",
     "scalable software architecture",
     "mission-critical systems",
     "secure banking software",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "DevOps consulting",
     "IT outsourcing bangladesh",
     "software development company bangladesh",
-    "ruby on rails enterprise",
-    "react enterprise applications",
-    "mobile app development enterprise"
+    "ruby on rails development",
+    "react applications",
+    "mobile app development"
   ],
   authors: [{ name: "Mihisoft Technologies Ltd." }],
   robots: "index, follow",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     "bingbot": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   },
   openGraph: {
-    title: "Mihisoft Technologies Ltd. | Enterprise Software Development & Digital Transformation Partner",
+    title: "Mihisoft Technologies Ltd. | Professional Software Development & Digital Transformation",
     description: "Professional software development company delivering quality solutions for Government, Fintech, Healthcare & E-commerce. Secure development practices with dedicated support.",
     url: "https://mihisoft.com/",
     siteName: "Mihisoft Technologies Ltd.",
@@ -73,8 +73,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mihisoft.com"),
   twitter: {
     card: "summary_large_image",
-    title: "Mihisoft Technologies Ltd. | Enterprise Software Development Partner",
-    description: "Trusted enterprise software partner for Government, Fintech, Healthcare & E-commerce. Mission-critical solutions with 99.9% uptime guarantee.",
+    title: "Mihisoft Technologies Ltd. | Professional Software Development",
+    description: "Trusted software development partner for Government, Fintech, Healthcare & E-commerce. Quality solutions with dedicated support.",
     site: "@mihisoft",
     creator: "@mihisoft",
     images: ["https://mihisoft.com/images/logo/logo.png"],
@@ -153,19 +153,19 @@ export default function RootLayout({
                 "name": "Worldwide"
               },
               "services": [
-                "Enterprise Software Development",
+                "Custom Software Development",
                 "Government & Public Sector Solutions", 
                 "Fintech & Banking Applications",
                 "Healthcare Management Systems",
-                "E-Commerce Enterprise Platforms",
+                "E-Commerce Platforms",
                 "Digital Transformation Consulting",
                 "Cloud Architecture & DevOps",
-                "Mobile Enterprise Applications",
-                "Custom Mission-Critical Systems"
+                "Mobile App Development",
+                "Mission-Critical Systems"
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Enterprise Software Services",
+                "name": "Software Development Services",
                 "itemListElement": [
                   {
                     "@type": "Offer",
