@@ -5,6 +5,8 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { Phone, Mail, MapPin, Send } from 'lucide-react'
 
+const CONTACT_FORM_ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT
+
 export default function ContactSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -29,13 +31,23 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSubmitMessage(null)
+
+    if (!CONTACT_FORM_ENDPOINT) {
+      setSubmitMessage({
+        type: 'error',
+        text: 'Contact form is not configured. Please set NEXT_PUBLIC_CONTACT_FORM_ENDPOINT.',
+      })
+      return
+    }
+
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(CONTACT_FORM_ENDPOINT, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify(formData),
       })
